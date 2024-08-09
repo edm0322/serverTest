@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Command Center</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h2>Command Center</h2>
+    <select id="client-select">
+        <option value="">Select a client</option>
+		<option value="all">All Clients (except localhost)</option>
+    </select>
+    <input id="command-input" type="text" placeholder="Enter command">
+    <button id="send-command">Send Command</button>
+    <div id="client-count">
+        <h3>Client Count:</h3>
+    </div>
+    <div id="client-list">
+        <h3>Connected Clients</h3>        
+    </div>
+    <div id="result-container">
+        <h3>Command Results:</h3>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
